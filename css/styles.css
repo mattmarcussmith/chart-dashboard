@@ -1,0 +1,69 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+span {
+  font-weight: bolder;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: rgb(120, 115, 210);
+  color: white;
+
+  padding: 3em .5em;
+}
+
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.bell-icon   {
+  width: 17%;
+  padding-right: .5rem;
+ 
+}
+span {
+  border: .1px solid white ;
+  height: 2.9rem;
+  
+}
+.profile-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.profile-picture {
+  width: 30%;
+  border-radius: 2rem;
+  margin-right: 1em;
+}
+/** HEADER END **/
+
+nav, a  {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(54, 53, 95);
+
+  
+}
+nav img  {
+  width: 40%;
+  padding: 1em 0;
+
+}
