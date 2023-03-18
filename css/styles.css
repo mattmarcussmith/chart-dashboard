@@ -4,8 +4,14 @@
   padding: 0;
 
 }
+
+
 body {
   font-family: 'Merriweather Sans', sans-serif;
+
+}
+section {
+  border-bottom: 1px solid gray;
 }
 span {
   font-weight: bolder;
@@ -21,11 +27,30 @@ header {
 
   padding: 3em .5em;
 }
+li, ol {
+  list-style-type: none;
+ padding-left: 2.5em;
+ padding-right:2.5em;
+}
 
 
-.header-wrapper {
+
+h3, h2 {
+  margin: 2em 0 2em 0 ;
+  
+}
+.chart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+  
+  
+}
+.header-wrapper, .profile-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
  
 }
@@ -39,20 +64,25 @@ span {
   height: 2.9rem;
   
 }
-.profile-wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
+
 .profile-picture {
   width: 30%;
   border-radius: 2rem;
   margin-right: 1em;
 }
 /** HEADER END **/
+a {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  color: rgb(120, 115, 210);
 
-nav, a  {
+}
+
+nav  {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -66,4 +96,191 @@ nav img  {
   width: 40%;
   padding: 1em 0;
 
+}
+
+/* Mobile responsive */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "header"
+  "navigation"
+  "main";
+}
+.header-container {
+  grid-area: header;
+  }
+  .navigation {
+  grid-area: navigation;
+  }
+  .main-container {
+  grid-area: main;
+  }
+
+  .main-header{
+    display: flex;
+    flex-direction: row;
+
+    
+  }
+  .headline {
+    width: 50%;
+  
+  }
+  .tab {
+    border: 2px solid gray;
+    background-color: rgb(241, 241, 241);
+    margin-left: .5em;
+    width: 100%;
+  }
+
+  .traffic{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+   
+    
+   
+  }
+
+.traffic-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 1em 0;
+  
+ 
+}
+.daily, .mobile {
+  margin: 2em 0 2em 0 ;
+}
+
+.social-container{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: solid .6px black;
+  border-radius: 5%;
+  background-color: lightgray;
+  margin: 1em;
+  padding: 1em;
+ 
+  
+}
+.social-image{
+  width: 20%;
+  fill: #fff;
+  background-color: rgb(120, 115, 210);
+  border-radius: 200px;
+  padding: 1.6em;
+  margin: 1em;
+  overflow: hidden;
+
+}
+.social-image svg {
+  width: 100%;
+}
+
+.social-text p:first-child  {
+  color: rgb(120, 115, 210);
+}
+.social-stats {
+  font-size: 2.5em;
+}
+
+.members-container, .members-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+
+.profile-image {
+  width: 20%;
+  border-radius: 200px;
+}
+.members-text {
+  padding: .5em;
+  margin: 1em;
+  
+}
+
+.message, .settings {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 2em;
+}
+.widget-container {
+  display: flex;
+  flex-direction: column;
+ 
+  
+}
+.form-field {
+  border-radius: 5px;
+  border: solid .4px;
+  padding: 1em;
+  background-color: rgb(235, 235, 235);
+ 
+}
+
+.form-area {
+  margin-top: 1em;
+  border: solid .4px;
+  color: black;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 10em;
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+}
+.settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+ 
+}
+.settings-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+.button-primary {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: rgb(120, 115, 210);
+  font-size: 1.2em;
+  color: #fff;
+  margin-right: .3em;
+  border-radius: 5px;
+  width: 100%;
+
+}
+.settings-primary {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: rgb(120, 115, 210);
+  font-size: 1.2em;
+  color: #fff;
+  margin-right: .3em;
+  border-radius: 5px;
+  width: 50%;
+}
+.button-disabled {
+  margin-top: 1em;
+  padding: 1em;
+  margin-left: .3em;
+  font-size: 1.2em;
+  color: #fff;
+  border-radius: 5px;
+  width: 50%;
+  background-color: gray;
 }
