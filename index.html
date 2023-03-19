@@ -9,6 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Dashboard</title>
   </head>
@@ -60,7 +62,7 @@
         <div class="tab"></div>
       </div>
       <!-- alert banner -->
-      <div class="alert" id="alert"></div>
+      <div class="alert aler-banner-close" id="alert"></div>
 
       <!-- line graph charts -->
       <section class="traffic">
@@ -70,12 +72,12 @@
             <li class="traffic-nav-link">Hourly</li>
             <li class="traffic-nav-link">Daily</li>
             <li class="traffic-nav-link active">Weekly</li>
-            <li class="traffic-nav-link"z>Monthly</li>
+            <li class="traffic-nav-link">Monthly</li>
           </ul>
         </div>
         <div class="widget-container-full">
           <!-- element line graph will attach to -->
-          <img class="chart" src="./images/chart1.jpg" alt="chart">
+         
           <canvas id="traffic-chart"></canvas>
         </div>
       </section>
@@ -85,7 +87,7 @@
         <h3>Daily Traffic</h3>
         <div class="widget-container-half">
           <!-- element bar graph will attach to -->
-          <img class="chart" src="./images/chart1.jpg" alt="chart">
+         
 
           <canvas id="daily-chart"></canvas>
         </div>
@@ -95,14 +97,14 @@
         <h3>Mobile Users</h3>
         <div class="widget-container-half">
           <!-- element bar graph will attach to -->
-          <img class="chart" src="./images/chart1.jpg" alt="chart">
+        
 
-          <canvas id="doughnut-chart"></canvas>
+          <canvas id="mobile-chart"></canvas>
         </div>
       </section>
 
       <!-- social SVGs -->
-      <section >
+     
     <section class="social">
 
       <div class="social-container">
@@ -134,7 +136,7 @@
 
       <div class="social-container">
         <div class="social-image">
-        <svg viewBox="0 0 24 24" class="icon" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 24 24"  class="icon" xmlns="http://www.w3.org/2000/svg">
           <path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"/>
         </svg>
         </div>
@@ -143,13 +145,12 @@
         <p class="social-stats">22,189</p>
         </div>
       </div>    
-    </section>
 </section>
 
     <!--members-->
-      <section class="members">
-        <h3>New Members</h3>
-        <div class="members-container">
+    <section class="members">
+      <h3>New Members</h3>
+      <div class="members-container">
         <img src="images/member-1.jpg" class="profile-image">
         <div class="members-text">
         <p>Victoria Chambers</p>
@@ -179,8 +180,8 @@
               <div class="members-text">
               <p>Dan Oliver</p>
               <a href="#">dan.oliver82@example.com</a>
-              <p>12/01/22</p>
               </div>
+              <p>12/01/22</p>
               </div>
       </section>
 
@@ -216,7 +217,7 @@
               <div class="members-container">
                 <img src="images/member-4.jpg" class="profile-image">
                 <div class="members-text">
-                  <p>Dan Oliver posted<span> WebApps SEO Tips</span></p>
+                  <p>Dan Oliver on<span>WebApps SEO Tips</span></p>
                    <p>5 hours ago</p>
                 </div>
                 </div>
@@ -227,7 +228,7 @@
          <h3>Message User</h3>
           <form class="widget-container">
                  <input type="text" placeholder="Search for user" class="form-field" id="userField">
-                  <textarea placeholder="Message for user" class="form-area" id= "messageField" ></textarea>
+                  <textarea placeholder="Message for user" class="form-area" id="messageField" ></textarea>
               <button class="button-primary" id="send" >Send</button>
          </form>
   </section>
@@ -237,6 +238,15 @@
         <h3>Settings</h3>
   <!-- custom CSS toggle code-->
   <!-- custom CSS toggle code-->
+  <div class="toggle">
+    <label for="email">Send Email Notifications</label>
+    <input class="toggle-checkbox" id="email" type="checkbox" >
+   
+</div>
+<div class="toggle">
+    <label for="public">Set Profile to Public</label>
+    <input class="toggle-checkbox" id="public" type="checkbox">
+</div>
 
       <select class="form-field" id="timezone">
           <option disabled selected>Select a Timezone</option>
