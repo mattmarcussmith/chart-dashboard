@@ -3,12 +3,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="stylesheet" href="./css/styles.css" />
@@ -16,7 +13,7 @@
   </head>
   <body class="grid-container">
     <header class="header">
-      <h1>WebApp &trade;</h1>
+      <h3>WebApp &trade;</h3>
       <div class="header-wrapper">
         <div class="bell-icon">
           <svg
@@ -75,7 +72,7 @@
             <li class="traffic-nav-link">Monthly</li>
           </ul>
         </div>
-        <div class="widget-container-full">
+        <div class="widget-container-full" id="chart">
           <!-- element line graph will attach to -->
          
           <canvas id="traffic-chart"></canvas>
@@ -148,7 +145,7 @@
 </section>
 
     <!--members-->
-    <section class="members">
+    <section class="members" id="members">
       <h3>New Members</h3>
       <div class="members-container">
         <img src="images/member-1.jpg" class="profile-image">
@@ -193,33 +190,37 @@
           <img src="images/member-1.jpg" class="profile-image">
           <div class="members-text">
           <p>Victoria Chambers commented on
-             <span>WebApp's SEO Tips</span></p>
-             <p class="hours">4 hours ago</p>
+             <p class="activity">WebApp's SEO Tips</p></p>
+             <p class="hours">4 hours ago </p>
             </div>
+            <p class="character">< </p>
         </div>
   
           <div class="members-container">
             <img src="images/member-2.jpg" class="profile-image">
             <div class="members-text">
               <p>Dale Byrd liked the post
-                <span>Facebook's Changes for 2021</span></p>
+                <p class="activity">Facebook's Changes for 2021</p></p>
                 <p class="hours">5 hours ago</p>
               </div>
+              <p class="character">< </p>
             </div>
             <div class="members-container">
               <img src="images/member-3.jpg" class="profile-image">
               <div class="members-text">
                 <p>Dawn Wood commented on 
-                  <span>Facebook's Changes for 2021</span></p>
+                  <p class="activity">Facebook's Changes for 2021</p></p>
                  <p class="hours">5 hours ago</p>
               </div>
+              <p class="character">< </p>
               </div>
               <div class="members-container">
                 <img src="images/member-4.jpg" class="profile-image">
                 <div class="members-text">
-                  <p>Dan Oliver on<span>WebApps SEO Tips</span></p>
+                  <p>Dan Oliver on<p class="activity">WebApps SEO Tips</p></p>
                    <p class="hours">5 hours ago</p>
                 </div>
+                <p class="character">< </p>
                 </div>
       </section>
      
@@ -234,7 +235,7 @@
   </section>
 
   <!-- local settings widget -->
-   <section class="settings">
+   <section class="settings" id="settings">
         <h3>Settings</h3>
   <!-- custom CSS toggle code-->
   <!-- custom CSS toggle code-->
