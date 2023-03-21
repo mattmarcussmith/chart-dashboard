@@ -387,6 +387,7 @@ span {
   .settings {
     border-left: solid 1px rgb(181, 180, 180);
   }
+ 
 
   .members-container {
     display: flex;
@@ -530,7 +531,7 @@ span {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    width: 70%;
+    width: 50%;
   }
 
   .widget-container-full {
@@ -545,7 +546,17 @@ span {
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
-  
+
+}
+.toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.toggle label {
+  flex-basis: 210px;
 }
 
 
@@ -561,6 +572,7 @@ span {
   transition: background 1s;
   outline: none;
   padding-left: 20px;
+  
 
  
 }
